@@ -17,6 +17,20 @@ public class Person {
         sättFöddÅr(å);
     }
 
+    public void nyttBarn(Person barn) {
+        barnLista.add(barn);
+    }
+
+    public int antalBarn() {
+        return barnLista.size();
+    }
+
+    public void printaBarn() {
+        for (Person p : barnLista) {
+            System.out.println(p);
+        }
+    }
+
     // instansmetoder
     public void sättFörnamn(String fn) {
         if (fn != null)
